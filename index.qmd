@@ -1,0 +1,26 @@
+---
+title: "Printing Environment Variables in Quarto"
+format: html
+execute:
+  echo: true
+  warning: false
+editor: visual
+jupyter: python3
+---
+
+In this document, we will print out some environment variables.
+
+```{python}
+import os
+```
+
+```{python}
+# List of environment variables to print
+env_vars = ['Short', 'Normal', 'Long']
+```
+
+```{python}
+# Retrieve and print environment variables
+env_values = {var: os.getenv(var) for var in env_vars}
+env_values
+```
