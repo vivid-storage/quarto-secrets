@@ -16,7 +16,7 @@ import os
 
 ```{python}
 # List of environment variables to print
-env_vars = ['Short', 'Normal', 'Long']
+env_vars = ['Short', 'Normal', 'Long', 'R_CONFIG_ACTIVE', 'QUARTO_PROFILE']
 ```
 
 ```{python}
